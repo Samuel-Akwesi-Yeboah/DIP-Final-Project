@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/rateParking.css')}}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!--<script src="{{ url_for('static' , filename='scripts/home.js') }}"></script> -->
+    <body>
+        <form method="POST" action="" enctype="multipart/form-data">
+            <div class="container">
+                <h1 class="title"> Lime Parking Verification </h1>
+                <h2 class="subtitle">Do you think you parked the lime correctly?</h2> 
+            </div>
+            <div class="container">
+                {%if imagePath is defined and imagePath %}
+                {% set imgurl = url_for( 'static', filename=imagePath) %}
+                <div class="pictureBox" id = pictureBox>
+                    <img id="actualImage" src="{{ imgurl }}" alt="" />
+                </div>
+                {% endif %}
+            </div>
+            <div class="container">
+                <div class="buttonDiv">
+                    <input id='yesButton' class='uploadButton' type='submit' name='submit' value='Yes' id=yesButton>
+                </div>
+                <div class="buttonDiv">
+                    <input id='yesButton' class='uploadButton' type='submit' name='submit' value='No' id=yesButton>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

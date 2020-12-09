@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/home.css')}}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="{{ url_for('static' , filename='scripts/home.js') }}"></script>
+    <body>
+        <form method="POST" action="" enctype="multipart/form-data">
+            <div class="container">
+                <h1 class="title"> Lime Parking Verification </h1>
+                <h2 class="subtitle">Please upload a picture of the lime that you parked. </h2> 
+            </div>
+            <div class="container">
+                <div class="pictureBox" id = pictureBox>
+                    <div class="pictureSubtitle" id='pictureText'>
+                        Upload a picture of the parked Lime Scooter.
+                    </div>
+                    <input type="file" name=image id="uploadedImage" class="pictureUpload" accept="image/*" onchange="readURL(this)"/>
+                    <img id="actualImage" src="#" alt="" />
+                </div>
+            </div>
+            <div class="container">
+                <input type="submit" class="uploadButton" value="Verify Lime Parking">
+            </div>
+    </body>
+</html>

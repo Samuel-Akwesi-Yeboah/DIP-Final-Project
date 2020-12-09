@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+}
+
+.title {
+    size: 20 px;
+    color: chartreuse;
+    margin: auto;
+}
+
+.subtitle {
+    margin: auto;
+}
+
+
+.pictureBox {
+    width: 80%;
+    height: 80%;
+    margin: 20px;
+    align-self: center;
+    text-align: center;
+}
+
+.imageBox {
+    margin: 20px;
+    align-self: center;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+
+.pictureUpload {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+
+.pictureSubtitle {
+    position: relative;
+    top: 50%;
+    text-decoration: underline
+}
+
+.buttonDiv {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.uploadButton {
+    width: 20%;
+    height: 50px;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    background-color: lime;
+    border-color: darkgreen;
+}
