@@ -1,0 +1,7 @@
+To run the project enter in the command prompt from the project directory that contains app.py
+
+The python package required are included in the requirements.txt file
+Enter 'python -m pip install -r requirements.txt'
+Enter 'python -m flask run'
+
+ENJOY !!!!
